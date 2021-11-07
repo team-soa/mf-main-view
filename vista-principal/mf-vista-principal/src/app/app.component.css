@@ -1,0 +1,15 @@
+.card{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .btnplay{
+    color: red;
+    background-color: transparent;
+    width: 33%;
+    margin-left: 33%;
+}
+  .btnplay:hover{
+    color: wheat;
+    background-color: var(--k-tertiary);
+}
