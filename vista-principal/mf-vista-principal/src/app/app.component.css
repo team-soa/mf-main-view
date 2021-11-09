@@ -1,15 +1,18 @@
+@import url("../styles.scss");
+ 
+
 .card{
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
-  .btnplay{
-    color: red;
-    background-color: transparent;
-    width: 33%;
-    margin-left: 33%;
+.btnplay{
+  color: var(--k-tertiary);
+  background-color: transparent;
+  width: 33%;
+  margin-left: 33%;
 }
-  .btnplay:hover{
-    color: wheat;
-    background-color: var(--k-tertiary);
+.btnplay:hover{
+  color: var(--k-light);
+  background-color: var(--k-tertiary);
 }
