@@ -15,6 +15,7 @@ export class DataManagerService {
 
   public saveCancionStream(item: Cancion) {
     this.cookieService.set("streamCancion", item._id);
+    this.cookieService.set('artista', item.artista);
   }
 
   public obtenerListaCancionesPublicas(): Observable<Cancion[]>{
