@@ -22,6 +22,7 @@ export class AppComponent {
   cancionActual: Cancion = new Cancion();
 
   ngOnInit(): void {
+    this.cookie.set('tipoVistaActual', 'normal');
     this.listaCancionesService.sharedListaCanciones.subscribe(listaCanciones => this.listaDeCacniones = listaCanciones)
 
     this.service.obtenerListaCancionesPublicas().subscribe(lista => {
@@ -44,7 +45,6 @@ export class AppComponent {
     
     // this.cookie.set("streamSong", JSON.stringify(item));
     this.router.navigate(['/stream']);
-    
   }
 
 }
