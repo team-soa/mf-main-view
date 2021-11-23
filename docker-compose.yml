@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  mfvistaprincipal:
+    image: mfvistaprincipal
+    build:
+      context: vista-principal/mf-vista-principal
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4208:4208

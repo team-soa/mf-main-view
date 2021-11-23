@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  mfvistaprincipal:
+    image: mfvistaprincipal
+    build:
+      context: vista-principal/mf-vista-principal
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 4208:4208
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "index.js"]
