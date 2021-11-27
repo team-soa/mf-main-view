@@ -9,7 +9,7 @@ import { Cancion } from '../Clases/Cancion';
 })
 export class DataManagerService {
 
-  URL = 'http://20.114.82.7:4003/songs'
+  URL = 'http://20.114.105.27:4003/songs'
   constructor(private http: HttpClient, private cookieService: CookieService) {
   }
 
